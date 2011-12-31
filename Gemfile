@@ -7,9 +7,9 @@ gem 'rails', '3.1.3'
 
 gem 'sqlite3'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
+
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
   gem 'coffee-rails', '~> 3.1.1'
@@ -18,7 +18,7 @@ end
 
 group :development do
   gem 'rspec-rails'
-  gem 'pry', '~> 0.9.7.4'
+  gem 'pry', '~> 0.9'
 end
 
 group :test do
