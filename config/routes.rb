@@ -1,4 +1,9 @@
 RubyConnect::Application.routes.draw do
+  
+  resources :questions
+  
+  root :to => 'questions#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
