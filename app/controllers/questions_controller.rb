@@ -13,6 +13,9 @@ class QuestionsController < ApplicationController
   def show
     @title = "Ruby.Connect"
     @question = Question.find(params[:id])
+    @answers = @question.answers
+    @answer = Answer.new
+    @answer[:question_id] = params[:id]
   end
   
   def create

@@ -1,6 +1,7 @@
 RubyConnect::Application.routes.draw do
   
   resources :questions
+  resources :answers
   
   root :to => 'questions#index'
   

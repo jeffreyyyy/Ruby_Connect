@@ -1,0 +1,16 @@
+<section>
+	<% flash.each do |key, value| %>
+	<div class="flash <%= key %>"><%= value %></div>
+	<% end %>
+</section>
+
+<%= form_for @answer do |f| %>
+<%= render 'shared/errors', :object => f.object %>
+  <div class="asd">
+    <%= f.text_area :content %>
+    <%= f.hidden_field :question_id %>
+  </div>
+  <div class="as">
+    <%= f.submit "Answer Question" %>
+  </div>
+<% end %>
