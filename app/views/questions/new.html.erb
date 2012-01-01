@@ -1,0 +1,20 @@
+<h2>Create A New Topic Question</h2>
+
+<div class="hold_on">
+ 
+</div>
+
+<%= form_for(@question) do |f| %>
+<%= render 'shared/errors', :object => f.object %>
+<div class="field">
+  <%= f.label :title, "Topic Description" %>
+  <%= f.text_field :title %>
+</div>
+<div class="field">
+  <%= f.label :content, "Question" %>
+  <%= f.text_area :content %>
+</div>
+<div class="actions">
+  <%= f.submit "Post New Question!" %>
+</div>
+<% end %>

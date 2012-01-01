@@ -1,0 +1,12 @@
+<p class="showtitle"><%= @question.title %></p>
+<p class="showcontent"><%= @question.content %></p>
+
+<% unless @question.answers.empty? %>
+  <div>
+	<%= render @answers %>
+  <div>
+<% end %>
+
+&nbsp;&nbsp;&nbsp;
+
+<%#= render 'answers/answer_form' %>

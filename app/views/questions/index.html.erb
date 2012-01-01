@@ -1,0 +1,17 @@
+<h2>Need help with Ruby? Get solutions here.</h2>
+
+<table summary="Questions">
+  <% @questions.each do |question| %>
+  <tr>
+    <td class="title">
+      <%= link_to question.title, question_path(question.id) %>
+    </td>
+    <td class="content">
+      <%= truncate( question.content, :length => 65 ) %>
+    </td>
+    <td class="content"> 
+      <%= pluralize( question.answers.count, "reply") %>
+    </td>
+  </tr>
+  <% end %>
+</table>
