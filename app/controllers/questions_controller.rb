@@ -12,7 +12,7 @@ class QuestionsController < ApplicationController
   
   def show
     @question = Question.find(params[:id])
-    @title = "#{@question.title}? | Ruby.Connect"
+    @title = "#{@question.title} | Ruby.Connect"
     @answers = @question.answers
     @answer = Answer.new
     @answer[:question_id] = params[:id]
