@@ -228,6 +228,18 @@ div.answers {
 		font: italic 18px Georgia, serif;
 	}
 }
+p.sign_in {
+	float: right;
+	margin: 0;
+	a {
+		text-decoration: none;
+		color: #d3d3d3;
+	}
+	a:hover {
+		text-decoration: none;
+		color: #000;
+	}
+}
 
 
 
