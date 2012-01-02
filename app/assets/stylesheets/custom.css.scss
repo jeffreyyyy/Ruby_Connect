@@ -69,8 +69,8 @@ textarea {
 }
 input {
 	margin-top: 5px;
-	width: 766px;
-	height: 30px;
+	width: 768px;
+	height: 35px;
 	font-size: 18px;
 	color: purple;
 	background-color: #eee;
@@ -212,4 +212,30 @@ div.answers {
 		color: #999;
 		text-align: right;
 	}
+	.name {
+		font-size: 14px;
+		font-family: Georgia, serif;
+		font-style: italic;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		color: #999;
+		text-align: left;
+	}
 }
+.answer_label {
+	input {
+		color: #999;
+		font: italic 18px Georgia, serif;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
