@@ -4,8 +4,8 @@
   <% @questions.each do |question| %>
   <tr>
     <td class="title">
-      <%= link_to question.title, question_path(question.id) %>
-    </td>
+			<%= link_to question.title, question %>
+		</td>
     <td class="content">
       <%= truncate( question.content, :length => 65 ) %>
     </td>
@@ -15,3 +15,4 @@
   </tr>
   <% end %>
 </table>
+
