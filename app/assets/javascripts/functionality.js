@@ -6,4 +6,15 @@ $(document).ready(function(){
 	$('Input').click(function(event){
 		if(Input.val() == default_value) Input.val("");
 	});
+	
+	$('p.sign_in').click(function(event) {
+		alert('You do not have permission to access this page');
+		event.preventDefault();
+	});
+	
+	$('Input').focusout(function() {
+		if (Input.val() == "" ) {
+			Input.val('Name Goes Here');
+		};
+	});
 });
