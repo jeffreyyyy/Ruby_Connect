@@ -1,4 +1,8 @@
+<div class="table_wrap">
+
 <h2>Need help with Ruby-on-Rails? Get solutions here.</h2>
+
+<%= link_to "New Question", new_question_path, class: 'post_new' %>
 
 <table summary="Questions">
   <% @questions.each do |question| %>
@@ -15,4 +19,5 @@
   </tr>
   <% end %>
 </table>
-
+</div>
+<%= paginate @questions %>

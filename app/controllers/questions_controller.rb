@@ -2,7 +2,7 @@ class QuestionsController < ApplicationController
   
   def index
     @title = "Home | Ruby.Connect"
-    @questions = Question.all
+    @questions = Question.order(:title).page params[:page]
   end
   
   def new
@@ -27,5 +27,4 @@ class QuestionsController < ApplicationController
       render 'new'
     end
   end
-
 end

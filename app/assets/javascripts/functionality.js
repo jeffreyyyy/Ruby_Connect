@@ -8,7 +8,6 @@ $(document).ready(function(){
 	});
 	
 	$('p.sign_in').click(function(event) {
-		alert('You do not have permission to access this page');
 		event.preventDefault();
 	});
 	
